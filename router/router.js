@@ -11,13 +11,14 @@ router.get('/', (req, res) => {
 });
 router.post('/', (req, res) => {
     var answer = req.body.answer;
+    var ch = req.body.ch;
     switch(answer) {
         case "왜 고3이 코드짜고 있냐": res.render('index.ejs', {ch: 1}); break;
-        case "상하이": case "상해": res.render('index.ejs', {ch: 2}); break;
-        case "1919": case "1919년": res.render('index.ejs', {ch: 3}); break;
-        case "1932": case "1932년": res.render('index.ejs', {ch: 4}); break;
-        case "B": case "b": case "비": res.render('index.ejs', {ch: 5}); break;
-        case "물통폭탄": case "물통": res.render('index.ejs', {ch: 6}); break;
+        case "상하이": case "상해": if (ch == 1) res.render('index.ejs', {ch: 2}); else res.render('noanswer'); break;
+        case "1919": case "1919년": if (ch == 2) res.render('index.ejs', {ch: 3}); else res.render('noanswer'); break;
+        case "1932": case "1932년": if (ch == 3) res.render('index.ejs', {ch: 4}); else res.render('noanswer'); break;
+        case "B": case "b": case "비": if (ch == 4) res.render('index.ejs', {ch: 5}); else res.render('noanswer'); break;
+        case "물통폭탄": case "물통": if (ch == 5) res.render('index.ejs', {ch: 6}); else res.render('noanswer'); break;
         default: res.render('noanswer.ejs'); break;
     }
 });

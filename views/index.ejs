@@ -2,28 +2,65 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>게임 이름</title>
+    <title>매헌</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Resources/image/favicon.ico">
 </head>
 
 <body id="main" class="scroll">
     <div id="container2">
     <% switch(ch) {
-        case 0: %><% include ending.ejs %><% break;
-        case 1: %><% include chapter01.ejs %><% break;
-        case 2: %><% include chapter02.ejs %><% break;
-        case 3: %><% include chapter03.ejs %><% break;
-        case 4: %><% include chapter04.ejs %><% break;
-        case 5: %><% include chapter05.ejs %><% break;
-        case 6: %><% include chapter06.ejs %><% break;
+        case 0: %><% include ending.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background0.jpg'); 
+            }
+        </style><% break;
+        case 1: %><% include chapter01.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background1.jpg'); 
+            }
+        </style><% break;
+        case 2: %><% include chapter02.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background2-3.png'); 
+            }
+        </style><% break;
+        case 3: %><% include chapter03.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background2-3.png'); 
+            }
+        </style><% break;
+        case 4: %><% include chapter04.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background4.jpg'); 
+            }
+        </style><% break;
+        case 5: %><% include chapter05.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background5.jpg'); 
+            }
+        </style><% break;
+        case 6: %><% include chapter06.ejs %>
+        <style>
+            #main {
+                background-image: url('../Resources/image/background6.png'); 
+            }
+        </style><% break;
     } %>
     <p>&nbsp;</p>
     <% if (ch != 6 && ch) { %>
         <p><div class="d2">
         <form action="/" method="POST">
-        <input type="text" placeholder="정답을 입력해주세요." name='answer'>
-        <button type="submit"></button>
+            <input type="hidden" name="ch" value=<%= ch %>>
+            <input type="text" placeholder="정답을 입력해주세요." name='answer'>
+            <button type="submit"></button>
         </form>
         </div></p>
     <% } %>

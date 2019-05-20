@@ -7,7 +7,7 @@ html, body {
 img {border: 0;}
 html{background-color: transparent;}
 #main {
-    background-image: url('../Resources/image/background.png'); 
+    /* background-image: url('../Resources/image/background.png');  */
     background-repeat: no-repeat; 
     background-size: 100% 100%;
 	background-attachment: fixed; 
@@ -21,6 +21,7 @@ html{background-color: transparent;}
     padding-bottom: 20px;
 	box-shadow: 0 0 3px 0 black;}
 #container1 {
+	background-image: url('../Resources/Hanji-1.gif');
 	background-color: white;
 	font-family: '굴림', Gulim;
 	font-size: 9pt;
