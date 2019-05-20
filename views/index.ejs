@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>게임 이름</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="main" class="scroll">
+    <div id="container2">
+    <% switch(ch) {
+        case 0: %><% include ending.ejs %><% break;
+        case 1: %><% include chapter01.ejs %><% break;
+        case 2: %><% include chapter02.ejs %><% break;
+        case 3: %><% include chapter03.ejs %><% break;
+        case 4: %><% include chapter04.ejs %><% break;
+        case 5: %><% include chapter05.ejs %><% break;
+        case 6: %><% include chapter06.ejs %><% break;
+    } %>
+    <p>&nbsp;</p>
+    <% if (ch != 6 && ch) { %>
+        <p><div class="d2">
+        <form action="/" method="POST">
+        <input type="text" placeholder="정답을 입력해주세요." name='answer'>
+        <button type="submit"></button>
+        </form>
+        </div></p>
+    <% } %>
+    </div>
+    <p>&nbsp;</p>
+    <script src="js/slb.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* @CHARSET "UTF-8"; */
+
+/* general */
+html, body {
+	margin: 0px;
+	height: 100%;}
+img {border: 0;}
+html{background-color: transparent;}
+#main {
+    background-image: url('../Resources/image/background.png'); 
+    background-repeat: no-repeat; 
+    background-size: 100% 100%;
+	background-attachment: fixed; 
+	background-position: 0% 0%;
+    background-color: gray;
+}
+#container1, #container2 {
+	width: 700px;
+	margin: auto;
+    padding-left: 62px;
+    padding-bottom: 20px;
+	box-shadow: 0 0 3px 0 black;}
+#container1 {
+	background-color: white;
+	font-family: '굴림', Gulim;
+	font-size: 9pt;
+	color: black;
+	padding-top: 10px;}
+#container2 {
+    background-image: url('../Resources/Hanji-1.gif'); 
+    background-size: 100%;
+    background-repeat: repeat-y;
+	background-color: black;
+	font-family: "바탕", Batang;
+	font-size: 10pt;
+    color: black;
+}
+p {
+	margin-top: 16px;
+	margin-bottom: 0px;}
+hr {
+	position: absolute;
+    left: 200px;
+	width: 606px;}
+
+/* other body */
+#main2 {
+	background-image: url('index_bg1.gif'); 
+}
+.line {
+	font-size: 12pt;
+	line-height: 160%;}
+.strong {
+	font-weight: bold;
+	line-height: 160%;}
+.bold {
+	font-family: '바탕체', BatangChe;
+	font-weight: bold;}
+.event_board {
+	border: none;
+	width: 600px;
+	height: 550px; 
+	margin: 0px;}
+
+/* link */
+.imglink {
+	cursor: pointer; 
+	border-bottom: 0px solid blue; 
+	line-height:2;
+	color: blue;}
+.next:link {text-decoration: none; color: red;}
+.next:visited {text-decoration: none; color: red;}
+.next:active {text-decoration: none; color: red;}
+.next:hover {text-decoration: none; color: red;}
+
+/* scrollbar */
+.scroll{
+	/* in IE */
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	scrollbar-face-color: #000000;
+	scrollbar-highlight-color: #000000;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #000000;
+	scrollbar-arrow-color: #ffffff;}	
+
+	/* in chrome */
+/*.scroll::-webkit-scrollbar {display: none;}*/
+/* .scroll::-webkit-scrollbar              { width: 10px; background-image: url('bg.png'); }
+.scroll::-webkit-scrollbar-button       { display: none; }
+.scroll::-webkit-scrollbar-track        { display: none; }
+.scroll::-webkit-scrollbar-track-piece  { display: none; }
+.scroll::-webkit-scrollbar-thumb        { border-radius: 10px; -webkit-box-shadow: inset 0 0 29px rgba(50,50,50,0.5); }
+.scroll::-webkit-scrollbar-corner       { display: none; }
+.scroll::-webkit-resizer                { display: none; } */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* SLB.JS */
+ .SLB_center { 
+	cursor: pointer; 
+	visibility: hidden; 
+	border: solid 4px #000000; 
+	background-color: #FFF;}
+ .SLB_close { 
+	cursor: pointer; 
+	display: none; 
+	font-family: verdana,tahoma; 
+	font-size: 9pt; 
+	background-color: #000000; 
+	color: #ffffff; 
+	padding-bottom: 4px;}
+ .SLB_caption { 
+	cursor: pointer; 
+	display: none; 
+	font-family: verdana,tahoma; 
+	font-size: 9pt; 
+	background-color: #000000; 
+	color: #ffffff; 
+	padding-bottom: 4px;}
+ #SLB_loading { 
+	cursor: pointer; 
+	display: none; 
+	z-index: 99998; 
+	position: absolute; 
+	font-family: verdana,tahoma; 
+	font-size: 9pt; 
+	background-color: #000000; 
+	color: #ffffff; 
+	padding: 3px 0px 4px 0px; 
+	border: solid 2px #cfcfcf;}
+#SLB_film {
+	z-index: 99997; 
+	position: absolute; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	background-color: #000000; 
+	filter: Alpha(opacity=60); 
+	opacity: 0.6; 
+	-moz-opacity: 0.6;}
+#SLB_content {
+	z-index: 99999; 
+	position: absolute;}
+
+/*etc*/
+#blank {
+	background-image: url('lasthacker2/capture.gif'); 
+	width: 600px; 
+	height: 432px; 
+	padding: 0px; 
+	border-spacing: 0px;}
+#blank td {width: 289px;}
+#blank .right {
+	text-align: right;
+	vertical-align: bottom;
+	font-family: '굴림', Gulim;}
+#player {
+    position: relative;
+    top: 10px;
+	left: 30px;
+	width: 205px;
+    overflow: hidden;
+    direction: ltr;
+	border-top-left-radius: 0.5em 0.5em;
+    border-top-right-radius: 0.5em 0.5em;
+	border-bottom-left-radius: 1em 0.7em;
+    border-bottom-right-radius: 1em 0.7em;}
+.baby {
+	background-image: url('lasthacker2/final_x.gif');
+	background-size: 100% 100%}
+.margin {
+	font-size: 8pt;
+	color: black;}
+#locker {
+	width: 564px; 
+	height: 242px; 
+	position: relative; 
+	overflow: hidden;}
+#down {position: absolute;}
+#up {
+	position: absolute; 
+	z-index: 1;}
+.box {position: absolute; 
+	z-index: 2; 
+	background-color: transparent;}
+#top {
+	width: 564px; 
+	height: 213px;}
+#left {
+	top: 213px; 
+	width: 339px; 
+	height: 21px;}
+#right {
+	top: 213px; 
+	left: 427px; 
+	width: 137px; 
+	height: 21px;}
+#bottom {
+	top: 234px; 
+	width: 564px; 
+	height: 8px;}
+
+/* contents */
+.title {font-size: 50pt;}
+.font1 {font-size: 36pt;}
+.font2 {font-size: 28pt;}
+.font3 {font-size: 24pt;}
+.sub {font-size: 22pt;}
+.no {font-size: 20pt;}
+.bar {font-size: 14pt;}
+.story {font-size: 8pt;}
+
+.red {color: red;}
+.blue {color: blue;}
+.yellow {color: yellow;}
+.lime {color: lime;}
+.black {color: black;}
+.color1 {color: #990000;}
+.color2 {color: #FC6A12;}
+.color3 {color: #A4F012;}
+.color4 {color: #575757;}
+.color5 {color: #108000;}
+.color6 {color: #666666;}
+
+/* input */
+form {
+  position: relative;
+  width: 200px;
+  margin: 1 auto;
+}
+.d2 {background: url("../Resources/Hanji-1.gif");}
+.d2 input, .d2 button {
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+.d2 input {
+  width: 100%;
+  height: 42px;
+  background: #F9F0DA;
+  padding-left: 15px;
+}
+.d2 button {
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  right: -4px;
+  background: #000000;
+  cursor: pointer;
+}
+.d2 button:before {
+  content: "\f105";
+  font-family: FontAwesome;
+  color: #F9F0DA;
+  font-size: 20px;
+  font-weight: bold;
+}
+.d6 {background: #000000;}
+.d6 form {
+  height: 25px;
+}
+.d6 input {
+  height: 100%;
+  width: 0;
+  padding: 0 45px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.d6 input:focus {
+  width: 130px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+.d6 button {
+  background: #000000;
+  border: none;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.d6 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 10px;
+  color: #373737;
+}
+
+.submitBtn {
+	border: none;
+	outline: none;
+	border-radius: 3px;
+
+	height: 26px;
+	top: 8px;
+	right: -4px;
+	cursor: pointer;
+}
+
+.submitBtn:hover {
+	background: darkgray;
+}
+
+.submitBtn:active {
+	background: gray;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>정답이 아닙니다.</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="css/style.css">
+<script src="resize.js"></script>
+
+<style>
+#blinker{
+    -webkit-animation: blink 1.2s step-end infinite;
+    -moz-animation: blink 1.2s step-end infinite;
+    animation: blink 1.2s step-end infinite;
+	background-color: black;
+	position: relative;
+	display: inline-block;
+	width: 7px;
+	height: 29px;
+	top: 4px;
+	left: -4px;
+}
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+@-webkit-keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+@-moz-keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+* {
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body id="main" onresize="onsize();" onload="onsize();">
+<div id="container1" style="margin-top:10px; margin-bottom: 10px;">
+
+<div style="font-size:48pt; font-family:'바탕', Batang; margin-top: 10px;">마지막 해커</div>
+<p style="margin-bottom: 85px;"></p>
+<p style="font-size:22pt; font-family:'바탕체', BatangChe;">정답이 아닙니다.</p>
+<p style="font-size:22pt; font-family:'바탕체', BatangChe;">다시 시도해 주시기 바랍니다.<span id="blinker"></span></p>
+<p>(잠시후 원래 페이지로 돌아갑니다)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+<script>
+    setTimeout(function() {
+        history.back();
+    }, 3000);
+</script>
+</body>
+</html>

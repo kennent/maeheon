@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>게임 이름</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="main" class="scroll">
+    <div id="container2">
+        <% include chapter07.ejs %>
+    </div>
+    <p>&nbsp;</p>
+    <% if (!first) { %>
+        <script>
+            alert("시간이 남았으므로, 검토를 해보는게 좋을 것 같다.");
+        </script>
+    <% } %>
+    <script src="js/slb.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>
