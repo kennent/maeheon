@@ -17,7 +17,8 @@ html{background-color: transparent;}
 #container1, #container2 {
 	width: 700px;
 	margin: auto;
-    padding-left: 62px;
+	padding-left: 62px;
+	padding-right: 62px;
     padding-bottom: 20px;
 	box-shadow: 0 0 3px 0 black;}
 #container1 {
