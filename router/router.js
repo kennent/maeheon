@@ -34,4 +34,9 @@ router.post('/ending', (req, res) => {
     }
 });
 
+// android
+router.get('/app', (req, res) => {
+    res.render('app.ejs');
+});
+
 module.exports = router;

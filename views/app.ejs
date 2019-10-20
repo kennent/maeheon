@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>매헌</title>
+    <link rel="icon" href="Resources/image/favicon.ico">
+    <style>
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .ppdf {
+            display: flex;
+            align-items: center;
+        }
+        .pdf {
+            height: 50%;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body id="main">
+    <p><img src="Resources/app/1.png"></p>
+    <p><img src="Resources/app/2.png"></p>
+    <p><img src="Resources/app/3.png"></p>
+    <% for (let i = 2; i <= 21;i++) { %>
+        <img class="pdf" src="Resources/app/0-<%= i %>.png">
+    <% } %>
+</body>
+</html>
